@@ -25,6 +25,10 @@ html, body {
   background-color: #40797f !important;
   color:#fff;
 }
+.nav-tabs:focus, .nav-tabs.focus {
+  background-color: #40797f !important;
+  color:#fff;
+}
 
 .container.img-thumbnail {
 	position: absolute;
@@ -34,6 +38,10 @@ html, body {
 	background-color: #60b5bf !important;
 	height: 250px;
 	
+}
+.icon{
+	margin-left: auto;
+	margin-right: auto;
 }
 #j2 {
 	background-color: #85dadf !important;
@@ -54,10 +62,10 @@ html, body {
 	background-color: #91cc52;
 }
 .modal-header, h4, .close {
-      background-color: #91cc52;
+      background-color: #60b5bf;
       color:white !important;
       text-align: center;
-      font-size: 30px;
+      font-size: 50px;
   }
 .modal-footer {
       background-color: #f9f9f9;
