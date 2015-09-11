@@ -1,0 +1,62 @@
+html, body {
+	size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: rgb(128,241,255);
+
+}
+/* .col, .row {
+	border: solid 2px black;
+} */
+.tabs {
+	width: 250px;
+	height: 210px;
+	top: 20px;
+	/* bottom: 20px; */
+	position: absolute;
+	/* display: block;  */
+}
+.tabs1 {
+	width: 250px;
+	height: 210px;
+	top: 250px;
+	/* bottom: 20px; */
+	position: absolute;
+	/* display: block;  */
+}
+.ca:hover {
+	background: #40797f !important;
+}
+.ca {
+	position: absolute;	
+	left: 400px;
+	height: 300px; width: 550px; border-radius: 50px;
+}
+
+.row {
+	float: left;
+}
+  .modal-header, h4, .close {
+      background-color: #91cc52;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }

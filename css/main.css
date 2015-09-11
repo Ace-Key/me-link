@@ -1,0 +1,86 @@
+html, body {
+	size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: rgb(128,241,255);
+
+}
+
+.btn-primary {
+	left: auto;
+	right: auto;
+	top: 40%;
+	position: fixed;
+	background: #40797f;
+	width: 50%;
+	height: 150px;
+	font-family: 'Titan One', Verdana, Geneva, sans-serif;
+	text-decoration: none;
+	border-radius: 50px;
+}
+.col-md-2.btn-primary {
+	background: #40797f;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	border-radius: 50px;
+}
+.btn-primary:hover {
+	background: #273c40;
+	text-decoration: none;
+}
+
+.link, .me {
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	font-family: 'Titan One', serif;
+	
+}
+.link {
+	color: black;
+	top: 700px; 
+	right: 550px;
+	border-right: 2px solid #203c40;
+	border-top: 2px solid #203c40;
+}
+.me  {
+	color: white;
+	right: 550px;
+	border-left: 2px solid #203c40;
+	border-bottom: 2px solid #203c40;
+}
+
+
+.containerFluid .jumbotron {
+	background-color: #60b5bf !important;
+	height: 190px;
+	
+}
+#j2 {
+	background-color: #85dadf !important;
+	height: 250px;
+	border-top: solid 1px #203c40;
+	border-bottom: solid 1px #203c40;
+}
+.img-responsive {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	height: 120px; 
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
