@@ -9,44 +9,46 @@ html, body {
 	left: auto;
 	right: auto;
 	top: 40%;
-	position: fixed;
+	position: absolute;
 	background: #40797f;
-	width: 50%;
-	height: 150px;
+	width: 40%;
+	height: 200px;
 	font-family: 'Titan One', Verdana, Geneva, sans-serif;
+	right: 470px;
+	font-size: 45pt;
 	text-decoration: none;
 	border-radius: 50px;
 }
-.col-md-2.btn-primary {
-	background: #40797f;
-	font-family: Arial, Helvetica, sans-serif;
-	text-decoration: none;
-	border-radius: 50px;
-}
+
 .btn-primary:hover {
 	background: #273c40;
 	text-decoration: none;
+	font-size: 45pt;
+	color: black;
+	
 }
 
 .link, .me {
 	position: absolute;
+	right: 700px;
 	width: 70px;
 	height: 50px;
 	font-family: 'Titan One', serif;
+
 	
 }
 .link {
 	color: black;
 	top: 700px; 
-	right: 550px;
-	border-right: 2px solid #203c40;
-	border-top: 2px solid #203c40;
+	
+	border-right: 4px solid #203c40;
+	border-top: 4px solid #203c40;
 }
 .me  {
 	color: white;
-	right: 550px;
-	border-left: 2px solid #203c40;
-	border-bottom: 2px solid #203c40;
+	
+	border-left: 4px solid #203c40;
+	border-bottom: 4px solid #203c40;
 }
 
 

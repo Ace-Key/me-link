@@ -4,24 +4,34 @@ html, body {
 	background: rgb(128,241,255);
 
 }
-/* .col, .row {
-	border: solid 2px black;
-} */
+#jumbo {
+	position: relative;
+	background-color: #85dadf !important;
+	height: 150px;
+	border-top: solid 1px #203c40;
+	border-bottom: solid 1px #203c40;
+	top: 500px;
+}
+#logo {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+}
 .tabs {
 	width: 250px;
 	height: 210px;
 	top: 20px;
-	/* bottom: 20px; */
+	
 	position: absolute;
-	/* display: block;  */
+	
 }
 .tabs1 {
 	width: 250px;
 	height: 210px;
 	top: 250px;
-	/* bottom: 20px; */
+	
 	position: absolute;
-	/* display: block;  */
+	
 }
 .ca:hover {
 	background: #40797f !important;
@@ -35,7 +45,7 @@ html, body {
 .row {
 	float: left;
 }
-  .modal-header, h4, .close {
+/*   .modal-header, h4, .close {
       background-color: #91cc52;
       color:white !important;
       text-align: center;
@@ -43,7 +53,7 @@ html, body {
   }
   .modal-footer {
       background-color: #f9f9f9;
-  }
+  } */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
