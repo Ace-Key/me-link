@@ -5,26 +5,29 @@ html, body {
 
 }
 
-.btn-primary {
-	left: auto;
-	right: auto;
+#start-btn {
+	margin-left: auto;
+	margin-right: auto;
 	top: 40%;
 	position: absolute;
 	background: #40797f;
 	width: 40%;
+	max-width: 60%;
+	min-width: 20%;
 	height: 200px;
 	font-family: 'Titan One', Verdana, Geneva, sans-serif;
+	color: #ffffff;
 	right: 470px;
 	font-size: 45pt;
 	text-decoration: none;
 	border-radius: 50px;
 }
 
-.btn-primary:hover {
+#start-btn:hover {
 	background: #273c40;
 	text-decoration: none;
 	font-size: 45pt;
-	color: black;
+	color: #000000;
 	
 }
 
@@ -39,7 +42,7 @@ html, body {
 }
 .link {
 	color: black;
-	top: 700px; 
+	top: 1000px; 
 	
 	border-right: 4px solid #203c40;
 	border-top: 4px solid #203c40;
@@ -70,19 +73,3 @@ html, body {
 	height: 120px; 
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
-
-@media (max-width: @screen-xs-max) { ... }
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... }

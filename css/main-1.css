@@ -1,7 +1,7 @@
 html, body {
 	size: 100%;
 	font-family: Arial, Helvetica, sans-serif;
-	background: rgb(128,241,255);
+	background: ;
 
 }
 a:hover{
@@ -25,11 +25,11 @@ a:hover{
 }
 .nav-tabs > li > a:hover, .nav-tabs > li.active > a{
   background-color: #40797f !important;
-  color:#fff;
+  color:#ffffff;
 }
 .nav-tabs:focus, .nav-tabs.focus {
-  background-color: #40797f !important;
-  color:#fff;
+  background-color: #80f1fe!important;
+  color:#ffffff;
 }
 
 .container.img-thumbnail {

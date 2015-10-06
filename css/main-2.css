@@ -4,6 +4,24 @@ html, body {
 	background: rgb(128,241,255);
 
 }
+h1{
+	padding: 2em;
+	 
+}
+#home, #text, #status, #lock, #close, #settings {
+	
+	
+	border: solid 1px #12fffe;
+	margin-left: 100px;
+	margin-top: 50px;
+	width: 300px;
+	height: 260px;
+	top: 20px;
+	position: relative;
+	float: left;
+	
+	
+}
 #jumbo {
 	position: relative;
 	background-color: #85dadf !important;
@@ -13,60 +31,34 @@ html, body {
 	top: 500px;
 }
 #logo {
-	margin-left: auto;
-	margin-right: auto;
+	position: absolute;
+	float: left;
+	float: right;
 	height: 100px;
 }
-.tabs {
+.tabs, .tabs1 {
+	margin-left: 1.5em;
+	margin-top: 1.5em;
+	
 	width: 250px;
 	height: 210px;
-	top: 20px;
-	
-	position: absolute;
-	
 }
-.tabs1 {
-	width: 250px;
-	height: 210px;
-	top: 250px;
-	
-	position: absolute;
-	
-}
+
 .ca:hover {
 	background: #40797f !important;
 }
 .ca {
-	position: absolute;	
-	left: 400px;
-	height: 300px; width: 550px; border-radius: 50px;
+	clear: both; height: 300px; width: 550px; border-radius: 50px; position: relative;
+	margin-left: auto; margin-right: auto;
+	
+}
+#c1 {
+	
+	background-color: #12fffe;
+	top: 50px;
+}
+#c2 {
+	background-color: #569910;
+	margin-top: 100px;
 }
 
-.row {
-	float: left;
-}
-/*   .modal-header, h4, .close {
-      background-color: #91cc52;
-      color:white !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-footer {
-      background-color: #f9f9f9;
-  } */
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
-
-@media (max-width: @screen-xs-max) { ... }
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... }
