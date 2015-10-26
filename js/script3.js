@@ -10,11 +10,13 @@ $(document).ready(function(){
 	ca.hide(1200).fadeIn(2000).draggable().resizable();
 	
 	
-	home.draggable().resizable();
-	settings.draggable().resizable();
-	status.draggable().resizable();
-	lock.draggable().resizable();
-	text.draggable().resizable();
-	close.draggable().resizable();
+	home.draggable();
+	settings.draggable();
+	status.draggable();
+	lock.draggable();
+	text.draggable();
+	close.draggable();
+	
+	
     
 });

@@ -7,36 +7,47 @@
     
     <title>Hub Page::Members</title>
 
-    <!-- Stylesheet -->
+    <!-- Stylesheet/Styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/jquery-ui.min.css" rel="stylesheet">
 	<link href="css/jquery-ui.css" rel="stylesheet">
     <link href="css/main-2.css" rel="stylesheet">
+	
+	
 
   </head>
   <body>
+
  
  <!-- UI area -->
 	<div class="container">
 			
 			
-			<div class ="ui-widget-content" id = "home"><a href="index.html"><img src="img/home.png" class="tabs ui-widget-content" alt="home-icon"/></a></div>
+			<div class ="ui-widget-content tabs-1" id = "home"><a href="index.html"><img src="img/home.png" class="tabs" alt="home-icon"/></a></div>
 		
-			<div class ="ui-widget-content" id = "settings"><img src="img/settings.png" class="tabs" alt="system/hub settings"/></div>
+			<div class ="ui-widget-content tabs-1" id = "settings"><img src="img/settings.png" class="tabs" alt="system/hub settings" data-toggle="modal" data-target="#setModal"/></div>
 		
-			<div class ="ui-widget-content" id = "lock"><img src="img/lock.png" class="tabs" alt="security/contact @hubservices"/></div>
+			<div class ="ui-widget-content tabs-1" id = "lock"><a href="#"><img src="img/lock.png" class="tabs" alt="security/contact @hubservices"/></a></div>
 
 			<div class="ui-widget-content ca" id = "c1"><h1>Customise area</h1></div>
 			<div class="ui-widget-content ca" id = "c2" ><h1>Customise area</h1></div>
 			
-			<div class ="ui-widget-content" id = "text" ><img src="img/text.png" class="tabs1" alt="news/data feeds"/></div>
+			<div class ="ui-widget-content tabs-2" id = "text" ><a href="#"><img src="img/text.png" class="tabs1" alt="news/data feeds"/></a></div>
 	
-			<div class ="ui-widget-content" id = "status"><img src="img/user.png" class="tabs1" alt="security/contact @hubservices"/></div>
+			<div class ="ui-widget-content tabs-2" id = "status"><a href="#"><img src="img/user.png" class="tabs1" alt="security/contact @hubservices"/></a></div>
 	
-			<div class ="ui-widget-content" id = "close" ><img src="img/close.png" class="tabs1" alt="news/data feeds"/></div>
+			<div class ="ui-widget-content tabs-2" id = "close" ><a href="#"><img src="img/close.png" class="tabs1" alt="close browser"/></a></div>
 				
 	</div>
 	
+<!-- modal's -->
+	
+
+<!-- three.js anims -->
+
+
+
+  
  <!-- logo area  -->
   <div class="container">
 	<div class="jumbotron" id="jumbo"><img class="img-responsive" id="logo" src="img/logo.png"/></div>
@@ -49,6 +60,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	<script src="js/three.min.js"></script>
 	<script src="js/script3.js"></script>
 
 

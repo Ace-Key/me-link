@@ -1,7 +1,7 @@
 html, body {
 	size: 100%;
 	font-family: Arial, Helvetica, sans-serif;
-	background: ;
+	background:#f9f9f9;
 
 }
 a:hover{
@@ -61,8 +61,14 @@ a:hover{
 .details {
 	width: 300px;
 	min-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 240px;
 	background-color: #91cc52;
+}
+.modal {
+	background: #f9f9f9;
+	
 }
 .modal-header, h4, .close {
       background-color: #60b5bf;
@@ -73,19 +79,3 @@ a:hover{
 .modal-footer {
       background-color: #f9f9f9;
   }
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
-
-@media (max-width: @screen-xs-max) { ... }
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... }

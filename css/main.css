@@ -20,7 +20,7 @@ html, body {
 	right: 470px;
 	font-size: 45pt;
 	text-decoration: none;
-	border-radius: 50px;
+	border-radius: 10px;
 }
 
 #start-btn:hover {
