@@ -5,15 +5,9 @@
     <title>Project ME-Link::Intro Page</title>
 
     <!-- css/js -->
-   
-  
-    <link href="css/main.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/script.js"></script>
-
-
-  </head>
+    </head>
   <body>
  <!-- button animation area -->
 <div class="container">
@@ -29,7 +23,104 @@
 </div>
  
 
-       
+       <!-- js -->
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/three.min.js"></script>
+<script>
+		
+			
+			var scene, camera, camera1, renderer, renderer1, geometry, material, rect, container, canvas;
+	
+			
+			canvas = document.createElement( 'canvas' );
+				canvas.width = 128;
+				canvas.height = 128;
+				
+				
+			  scene = new THREE.Scene();
+			  scene.position.x = -20;
+			  scene.position.y = 50;
+			  
+			 
+			  
+			  camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 10000 );
+			  
+			  container = new THREE.Object3D();
+			  
+				camera.position.set(200,200,1000);
+			 
+			  
+				renderer = new THREE.WebGLRenderer();
+				renderer.setClearColor("rgb(128,241,255)" );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth/2, window.innerHeight / 2 );
+				
+				renderer1 = new THREE.WebGLRenderer();
+				renderer1.setClearColor("rgb(128,241,255)" );
+				renderer1.setPixelRatio( window.devicePixelRatio );
+				renderer1.setSize( window.innerWidth/2, window.innerHeight / 2 );
+				
+				
+				document.body.appendChild( renderer.domElement );
+				document.body.appendChild( renderer1.domElement );
+				
+				geometry = new THREE.BoxGeometry( 400, 400, 400 );
+				material = new THREE.MeshBasicMaterial( { color: "rgb(7,85,97)", wireframe: false } );
+				
+				
+		
+			
+				//for loop of rectangles
+			
+					for ( var i = 0; i < 1; i ++ ) {
+					
+					//rectanglular cuboid
+					rect = new THREE.Mesh( geometry, material );
+					rect.position.x = 200*i;
+					rect.position.y = 700*i;
+					rect.position.z = 20*i;
+					
+					rect.rotation.y = 40;
+					rect.rotation.z = 20;
+
+					
+					//object (can add more if needed)
+					container.add( rect );
+					
+					
+					container.rotation.y = 100;
+					container.rotation.z = 80;
+					container.rotation.x = 20;
+					
+					container.position.x = 5;
+					container.position.y = 10;
+					container.position.z = 20;
+				
+					
+					scene.add( container, container );
+					
+					}
+				
+				
+				
+					var render = function () {
+					container.rotation.x += 0.01;
+					container.rotation.y += 0.00;
+					container.rotation.z += 0.05;
+					
+					requestAnimationFrame( render );
+					renderer.render(scene, camera);
+					//renderer.render(scene1, camera);
+					renderer1.render(scene,camera);
+					
+				};
+		
+		
+			render();
+			//code repurposed from three.js/mr.doob examples
+			
+		</script>
   </body>
 </html>
 

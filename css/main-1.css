@@ -7,6 +7,10 @@ html, body {
 a:hover{
 	text-decoration: none;
 }
+.icon {
+	height: 500px;
+	width: 700px;
+}
 .col-md-2.btn-primary {
 	background: #40797f;
 	font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +34,7 @@ a:hover{
 .nav-tabs:focus, .nav-tabs.focus {
   background-color: #80f1fe!important;
   color:#ffffff;
+  border-color: #80f1fe!important;
 }
 
 .container.img-thumbnail {
@@ -59,12 +64,30 @@ a:hover{
 	height: 160px; 
 }
 .details {
-	width: 300px;
+	width: 700px;
 	min-width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	height: 240px;
-	background-color: #91cc52;
+	float: left;
+	margin-left: 100px;
+	height: 400px;
+	background-color: #40797f;
+	
+	display: inline;
+}
+.thumbnail {
+	margin-top: 40px;
+	margin-left: 200px;
+	width: 400px;
+	height: 320px;
+	float: right;
+	
+	display: inline;
+	
+}
+#d1,#d2 {
+	
+		width: 400px;
+	height: 320px;
+	
 }
 .modal {
 	background: #f9f9f9;

@@ -17,6 +17,67 @@ $(document).ready(function(){
 	text.draggable();
 	close.draggable();
 	
+	home.tooltip({
+      show: null,
+      position: {
+        my: "left top",
+        at: "left bottom"
+      },
+      open: function( event, ui ) {
+        ui.tooltip.animate({ top: ui.tooltip.position().top + 30 }, "fast" );
+      }
+    });
+	
+		text.tooltip({
+      show: null,
+      position: {
+        my: "left top",
+        at: "left bottom"
+      },
+      open: function( event, ui ) {
+        ui.tooltip.animate({ top: ui.tooltip.position().top + 30 }, "fast" );
+      }
+    });
+	settings.tooltip({
+      show: null,
+      position: {
+        my: "left top",
+        at: "left bottom"
+      },
+      open: function( event, ui ) {
+        ui.tooltip.animate({ top: ui.tooltip.position().top + 30 }, "fast" );
+      }
+    });
+	status.tooltip({
+      show: null,
+      position: {
+        my: "left top",
+        at: "left bottom"
+      },
+      open: function( event, ui ) {
+        ui.tooltip.animate({ top: ui.tooltip.position().top + 30 }, "fast" );
+      }
+	 });
+	lock.tooltip({
+      show: null,
+      position: {
+        my: "left top",
+        at: "left bottom"
+      },
+      open: function( event, ui ) {
+        ui.tooltip.animate({ top: ui.tooltip.position().top + 30 }, "fast" );
+      }
+    });
+	close.tooltip({
+      show: null,
+      position: {
+        my: "left top",
+        at: "left bottom"
+      },
+      open: function( event, ui ) {
+        ui.tooltip.animate({ top: ui.tooltip.position().top + 30 }, "fast" );
+      }
+    });
 	
     
 });
