@@ -8,51 +8,41 @@
     <title>Hub Page::Members</title>
 
     <!-- Stylesheet/Styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
 	<link href="css/jquery-ui.min.css" rel="stylesheet">
 	<link href="css/jquery-ui.css" rel="stylesheet">
     <link href="css/main-2.css" rel="stylesheet">
 	
-	
-
   </head>
   <body>
 
  
  <!-- UI area -->
-	<div class="container">
+	<div class="container" >
 			
 			
-			<div class ="ui-widget-content tabs-1" id = "home"><a href="index.html"><img src="img/home.png" class="tabs" alt="home-icon"/></a></div>
+			<div class ="ui-widget-content tabs-1" id = "home" title="HOME"><a href="index.html"><img src="img/home.png" class="tabs" alt="home-icon"/></a></div>
 		
-			<div class ="ui-widget-content tabs-1" id = "settings"><img src="img/settings.png" class="tabs" alt="system/hub settings" data-toggle="modal" data-target="#setModal"/></div>
+			<div class ="ui-widget-content tabs-1" id = "settings" title="SETTINGS"><img src="img/settings.png" class="tabs" alt="system/hub settings" data-toggle="modal" data-target="#setModal"/></div>
 		
-			<div class ="ui-widget-content tabs-1" id = "lock"><a href="#"><img src="img/lock.png" class="tabs" alt="security/contact @hubservices"/></a></div>
+			<div class ="ui-widget-content tabs-1" id = "lock" title="SECURITY"><a href="#"><img src="img/lock.png" class="tabs" alt="security/contact @hubservices"/></a></div>
 
 			<div class="ui-widget-content ca" id = "c1"><h1>Customise area</h1></div>
 			<div class="ui-widget-content ca" id = "c2" ><h1>Customise area</h1></div>
 			
-			<div class ="ui-widget-content tabs-2" id = "text" ><a href="#"><img src="img/text.png" class="tabs1" alt="news/data feeds"/></a></div>
+			<div class ="ui-widget-content tabs-2" id = "text" title="NEWS FEED"><a href="#"><img src="img/text.png" class="tabs1" alt="news/data feeds"/></a></div>
 	
-			<div class ="ui-widget-content tabs-2" id = "status"><a href="#"><img src="img/user.png" class="tabs1" alt="security/contact @hubservices"/></a></div>
+			<div class ="ui-widget-content tabs-2" id = "status" title="CONTACT @HUBSERVICES"><a href="#"><img src="img/user.png" class="tabs1" alt="security/contact @hubservices"/></a></div>
 	
-			<div class ="ui-widget-content tabs-2" id = "close" ><a href="#"><img src="img/close.png" class="tabs1" alt="close browser"/></a></div>
+			<div class ="ui-widget-content tabs-2" id = "close" title="CLOSE WINDOW"><a href="#"><img src="img/close.png" class="tabs1" alt="close browser"/></a></div>
 				
 	</div>
+	<br /><br /><br /><br />
 	
 <!-- modal's -->
-	
-
-<!-- three.js anims -->
 
 
-
-  
- <!-- logo area  -->
-  <div class="container">
-	<div class="jumbotron" id="jumbo"><img class="img-responsive" id="logo" src="img/logo.png"/></div>
-	</div>
-    <!-- js and other plugins -->
+	<!-- js and other plugins -->
 	
 	<link href='https://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -64,6 +54,122 @@
 	<script src="js/script3.js"></script>
 
 
+
+<!--  logo area 
+  <div class="containerFluid">
+	<div class="jumbotron" id="jumbo"><img class="img-responsive" id="logo" src="img/logo.png"/></div> -->
+	</div>
+
+<!-- three.js anims -->
+<script>
+		
+			
+			var scene, camera, renderer, renderer1, geometry, geometry1, geometry2, material, material1, material3, rect, shape, shape1, container, canvas;
+	
+			
+			canvas = document.createElement( 'canvas' );
+				canvas.width = 128;
+				canvas.height = 128;
+				
+				
+			  scene = new THREE.Scene();
+			  scene.position.x= 200;
+			  scene.position.y= 1000;
+			  
+			  
+			 // scene1= new THREE.Scene();
+			  // scene1.position.x= 200;
+			  //scene1.position.y= 200;
+			  //scene1.position.z=10;
+			  camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 2000 );
+			  
+			  container = new THREE.Object3D();
+			  
+				camera.position.set(200,200,1000);
+			 
+			  
+				renderer = new THREE.WebGLRenderer();
+				renderer.setClearColor("rgb(128,241,255)" );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight/2);
+				
+				//renderer1 = new THREE.WebGLRenderer();
+				//renderer1.setClearColor("rgb(128,241,255)" );
+				//renderer1.setPixelRatio( window.devicePixelRatio );
+				//renderer1.setSize( window.innerWidth, window.innerHeight);
+				
+				
+				document.body.appendChild( renderer.domElement );
+				//document.body.appendChild( renderer1.domElement );
+				
+				geometry = new THREE.BoxGeometry( 200, 300, 400 );
+				geometry1 = new THREE.OctahedronGeometry( 100, 0);
+				material = new THREE.MeshBasicMaterial( { color: "rgb(7,85,97)", wireframe: false } );
+				material1 = new THREE.MeshBasicMaterial( { color: "rgb(18,235,254)", wireframe: false } );
+				
+		
+			
+				//for loop of rectangles
+			
+					for ( var i = 0; i < 3; i ++ ) {
+					
+					//rectanglular cuboid
+					rect = new THREE.Mesh( geometry1, material );
+					rect.position.x = 200*i;
+					rect.position.y = 700*i;
+					rect.position.z = 20*i;
+					
+					rect.rotation.y = 40;
+					rect.rotation.z = 20;
+					
+					//shape = new THREE.Mesh( geometry1, material1 );
+					//shape.position.x = 200*i;
+					//shape.position.y = 700*i;
+					//shape.position.z = 20*i;
+					
+
+					//object (loop used to edit amount)
+					container.add( rect );
+					
+					
+					container.rotation.y = 100;
+					container.rotation.z = 80;
+					container.rotation.x = 20;
+					
+					container.position.x = 5;
+					container.position.y = 10;
+					container.position.z = 20;
+				
+					
+					scene.add( container );
+					//scene1.add (shape);
+					
+					}
+				
+				
+				
+					var render = function () {
+					container.rotation.x += 0.01;
+					container.rotation.y += 0.00;
+					container.rotation.z += 0.05;
+					
+					//shape.rotation.x += 0.01;
+					//shape.rotation.y += 0.00;
+					//shape.rotation.z += 0.05;
+					
+					requestAnimationFrame( render );
+					renderer.render(scene, camera);
+					//renderer.render(scene1, camera);
+					
+				};
+		
+		
+			render();
+			//code repurposed from tween cubes example
+		</script>
+  
+ 
+    
        
   </body>
 </html>
