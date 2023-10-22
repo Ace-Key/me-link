@@ -45,7 +45,7 @@
 	<!-- js and other plugins -->
 	
 	<link href='https://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -78,10 +78,7 @@
 			  scene.position.y= 1000;
 			  
 			  
-			 // scene1= new THREE.Scene();
-			  // scene1.position.x= 200;
-			  //scene1.position.y= 200;
-			  //scene1.position.z=10;
+			
 			  camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 2000 );
 			  
 			  container = new THREE.Object3D();
@@ -94,19 +91,14 @@
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight/2);
 				
-				//renderer1 = new THREE.WebGLRenderer();
-				//renderer1.setClearColor("rgb(128,241,255)" );
-				//renderer1.setPixelRatio( window.devicePixelRatio );
-				//renderer1.setSize( window.innerWidth, window.innerHeight);
-				
-				
+			
 				document.body.appendChild( renderer.domElement );
-				//document.body.appendChild( renderer1.domElement );
+				
 				
 				geometry = new THREE.BoxGeometry( 200, 300, 400 );
 				geometry1 = new THREE.OctahedronGeometry( 100, 0);
-				material = new THREE.MeshBasicMaterial( { color: "rgb(7,85,97)", wireframe: false } );
-				material1 = new THREE.MeshBasicMaterial( { color: "rgb(18,235,254)", wireframe: false } );
+				material = new THREE.MeshBasicMaterial( { color: "rgb(10,90,100)", wireframe: false } );
+				material1 = new THREE.MeshBasicMaterial( { color: "rgb(30,200,210)", wireframe: true } );
 				
 		
 			
@@ -152,11 +144,9 @@
 					var render = function () {
 					container.rotation.x += 0.01;
 					container.rotation.y += 0.00;
-					container.rotation.z += 0.05;
+					container.rotation.z += 0.025;
 					
-					//shape.rotation.x += 0.01;
-					//shape.rotation.y += 0.00;
-					//shape.rotation.z += 0.05;
+				
 					
 					requestAnimationFrame( render );
 					renderer.render(scene, camera);
