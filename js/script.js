@@ -9,6 +9,7 @@ $(document).ready(function(){
 		link.animate({fontSize: '+=60pt', width: '+=150px', height: '+=150px'}, 1100);
 		me.animate({top: '50px'}, 500);
 		link.animate({top: '550px'}, 500);
-          button.hide(1700).fadeIn(2500);
+          button.hide(0);
+		  button.fadeIn(3000);
   });
 
